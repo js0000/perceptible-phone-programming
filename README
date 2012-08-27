@@ -1,0 +1,28 @@
+GREETINGS
+---------
+
+this repository holds a collection of software to generate audio. the audio was
+conceived for use in a wireless communication device, but could be used
+anywhere for any purpose.
+
+ppp: Perceptible Phone Programming
+rrr: Random-like Ring-tone Realization
+ttt: Text Transmission Tones
+
+to make noise, you'll need
+- perl
+- csound
+
+
+FILES
+-----
+gpl.txt : free software license
+ppp.txt : explanations, excuses, errata
+README : this
+rrr.ogg : sample output
+rrr.pl :  generator
+rrr.tmpl : template for unifiedCSD
+ttt.ogg : lather
+ttt.pl : rinse
+ttt.tmpl : repeat
+

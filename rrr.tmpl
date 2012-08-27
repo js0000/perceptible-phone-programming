@@ -1,0 +1,38 @@
+; filename: <TMPL_VAR FILENAME>
+; generated: <TMPL_VAR DATE_TIME>
+
+<CsoundSynthesizer>
+  
+  <CsOptions>
+    -o rrr_<TMPL_VAR EPOCH>.wav -W 
+  </CsOptions>
+
+  <CsInstruments>
+    sr = 44100
+    ksmps = 32
+    nchnls = 2
+    0dbfs  = 1
+
+    instr 3
+
+        kamp = p4
+        kcps = p5
+
+        a0 oscil	kamp, kcps, 11
+            outs	a0, a0
+
+    endin
+
+  </CsInstruments>
+
+  <CsScore>
+
+	f11 0 8 10 1  
+
+	; instrument start-time_seconds duration_seconds amplitude_0-1 frequency_hz
+	<TMPL_LOOP SCORE><TMPL_VAR LINE>
+	</TMPL_LOOP>e
+
+  </CsScore>
+
+</CsoundSynthesizer>

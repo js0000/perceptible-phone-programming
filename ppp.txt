@@ -1,0 +1,158 @@
+perceptible
+phone
+programming
+
+
+i offer a series of scripts and templates to help make your cell phone
+use a bit more enjoyable, perhaps. not the use per se, but the stimuli
+that alerts you to an incoming call or text.
+
+rrr: Random-like Ring-tone Realization
+ttt: Text Transmission Tones
+
+
+sadly, phones offer no open audio programming interfaces that i am aware
+of. i will admit to being well behind the curve [using an LG remarq
+instead of a 'smart phone' (relying on user's "smarts" instead of
+phone's, but i digress ...)], so they could exist; but i am not aware of
+any. the reason i bring the issue up at all, is because the best use of
+the programming would be to be run on the phone all the time. this way
+each ring-tone [or text alert] would be unique, and yet, recognizable as
+an audio indication that some agent is trying to contact you via your
+device.
+
+each script is an instance of something i might call
+"encoded-randomness-generating-micro-variations" if i were still trying
+to obtain a doctorate in music composition [done!], or start [or
+further] a career for myself as a music theorist or critic [would
+undoubtedly fail as i'm an awful self-promoter]. happily, none of that
+is relevant, so i can call it "frank" if i want to.
+
+
+in addition to the technical side of things, this music is also informed
+by the many humanistic pursuits i undertake each day and over the course
+of weeks, months, and years. probably foremost among them are my daoist
+readings. red pine's excellent and scholarly translation of lau tzu's
+classic is [still] on my bedside table. and i read them on twitter
+too. merton's chuang tzu and many others have also deepened my
+understanding.
+
+the two scripts have many aspects that are representative of this
+dualistic viewpoint:
+- prime numbers vs. powers of two
+- sine waves vs. noise
+- "random" vs. deterministic data
+
+
+i have once again been listening to a lot of sun ra's music; and
+the freedom i allowed myself with the sounds i use in the scripts is
+only one of the many learnings i receive from his music. 
+
+i spent much time on the code itself; more thinking than writing, but
+still a lot. on the one hand, i strive to make it as understandable as
+possible, adding comments where i thought they were needed or would
+help, and using white space to allow the reader to relax a bit. on the
+other hand, all the elements contained within the code [variable names,
+hard coded values, spacing to identify groups] were given careful
+consideration in order to add to the overall effect.
+
+also, i must acknowledge the open source software movement for making
+these sounds possible. these are my tools:
+- perl
+- csound
+- audacity
+- vim
+- linux
+
+
+lastly, here is the output from a terminal session used to generate the
+rrr sample file included with the package. look at all the csound
+plugins that are not installed on my system!
+
+js@eeech:~/work/ppp/rrr
+528 $ perl rrr.pl
+csound file rrr_1345942057.csd generated ok
+
+js@eeech:~/work/ppp/rrr
+529 $ csound rrr_1345942057.csd
+PortAudio real-time audio module for Csound
+0dBFS level = 32768.0
+Csound version 5.17 (double samples) May 30 2012
+libsndfile-1.0.25
+WARNING: could not open library '/usr/lib/csound/plugins64-5.2/libwidgets.so' (libfltk.so.1.1: cannot open shared object file: No such file or directory)
+WARNING: could not open library '/usr/lib/csound/plugins64-5.2/libfluidOpcodes.so' (libfluidsynth.so.1: cannot open shared object file: No such file or directory)
+WARNING: could not open library '/usr/lib/csound/plugins64-5.2/libvirtual.so' (libfltk.so.1.1: cannot open shared object file: No such file or directory)
+WARNING: could not open library '/usr/lib/csound/plugins64-5.2/libpmidi.so' (libportmidi.so.0: cannot open shared object file: No such file or directory)
+WARNING: could not open library '/usr/lib/csound/plugins64-5.2/libosc.so' (liblo.so.7: cannot open shared object file: No such file or directory)
+UnifiedCSD:  rrr_1345942057.csd
+STARTING FILE
+Creating options
+Creating orchestra
+Creating score
+rtaudio: PortAudio module enabled ... using blocking interface
+RAWWAVE_PATH: /usr/share/stk/rawwaves/
+orch compiler:
+        instr   3
+Elapsed time at end of orchestra compile: real: 0.009s, CPU: 0.010s
+sorting score ...
+        ... done
+Elapsed time at end of score sort: real: 0.010s, CPU: 0.010s
+Csound version 5.17 (double samples) May 30 2012
+graphics not supported on this terminal, ascii substituted
+0dBFS level = 1.0
+orch now loaded
+audio buffered in 256 sample-frame blocks
+writing 1024-byte blks of shorts to rrr_1345942057.wav (WAV)
+SECTION 1:
+ftable 11:
+ftable 11:      8 points, scalemax 1.000
+  _
+
+
+ _ _
+
+
+
+
+
+
+________
+
+
+
+
+
+
+
+     ' '
+
+      _
+new alloc for instr 3:
+B  0.000 ..  0.059 T  0.059 TT  0.059 M:  0.66700  0.66700
+B  0.059 ..  0.118 T  0.118 TT  0.118 M:  0.70700  0.70700
+B  0.118 ..  0.177 T  0.177 TT  0.177 M:  0.71900  0.71900
+B  0.177 ..  0.236 T  0.236 TT  0.236 M:  0.73800  0.73800
+B  0.236 ..  0.295 T  0.295 TT  0.295 M:  0.78300  0.78300
+B  0.295 ..  0.354 T  0.354 TT  0.354 M:  0.82500  0.82500
+B  0.354 ..  0.413 T  0.413 TT  0.413 M:  0.87000  0.87000
+B  0.413 ..  0.472 T  0.472 TT  0.472 M:  0.83900  0.83900
+B  0.472 ..  0.531 T  0.531 TT  0.531 M:  0.90200  0.90200
+B  0.531 ..  0.590 T  0.590 TT  0.590 M:  0.87500  0.87500
+B  0.590 ..  0.649 T  0.649 TT  0.649 M:  0.91000  0.91000
+B  0.649 ..  0.708 T  0.708 TT  0.708 M:  0.86200  0.86200
+B  0.708 ..  0.838 T  0.838 TT  0.838 M:  0.90400  0.90400
+B  0.838 ..  0.968 T  0.968 TT  0.968 M:  0.72300  0.72300
+B  0.968 ..  1.169 T  1.169 TT  1.169 M:  0.57800  0.57800
+B  1.169 ..  1.441 T  1.441 TT  1.441 M:  0.46200  0.46200
+B  1.441 ..  1.784 T  1.784 TT  1.784 M:  0.37000  0.37000
+B  1.784 ..  3.000 T  3.000 TT  3.000 M:  0.00000  0.00000
+Score finished in csoundPerform().
+inactive allocs returned to freespace
+end of score.              overall amps:  0.91000  0.91000
+           overall samples out of range:        0        0
+0 errors in performance
+Elapsed time at end of performance: real: 0.091s, CPU: 0.030s
+512 1024 sample blks of shorts written to rrr_1345942057.wav (WAV)
+js@eeech:~/work/ppp/rrr
+530 $
+
