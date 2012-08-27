@@ -86,7 +86,7 @@ for( my $i = 0; $i < 16; $i++ ) {
     $music_time += $dur;
     
     # do this each time, even if not used
-    $bfl = sprintf( "%.02f", $bfl - 0.04 );
+    $bfl = sprintf( "%.04f", $bfl - 0.008 );
 
     if( int( rand( 4 ) ) ) {
         $instrument = 'i4';
@@ -114,9 +114,9 @@ for( my $i = 0; $i < 16; $i++ ) {
     }
 }
 
-# silence up to 2 seconds
 @line = ();
-$dur = sprintf( "%.02f", 2.0 - $music_time );
+# silence up to 4 seconds
+$dur = sprintf( "%.02f", 4.0 - $music_time );
 push( @line, 'i2', $music_time, $dur, 0, 0 );
 push( @$score, { line => join( "\t", @line ) } );
 
